@@ -4,6 +4,19 @@ Registro de cambios del framework de prompting. Formato basado en [Keep a Change
 
 ---
 
+## [1.12.0] — 2026-08-02
+
+### Agregado
+
+- **Normativa documental `Rules/Rules-Docker-Installer-Guide.md`** — reglas constructivas que debe respetar un agente al redactar una guía `*-Docker-Installer-Guide.md` de un contenedor. A diferencia de las `Rule-*` del framework, que fijan comportamiento del agente, este documento fija la **forma del entregable**: 31 reglas (`RC-01`…`RC-31`) agrupadas en identidad (nomenclatura, frontmatter, familias de identificadores), estructura canónica (las 15 secciones y su orden), procedimientos y operación, reglas del relato, evidencia y honestidad epistémica, y convenciones tipográficas. Completan el documento 12 antipatrones (`A-01`…`A-12`), una checklist de validación, la plantilla mínima que resulta de aplicar las reglas, la tabla de evidencias y la sección de datos no verificados.
+- Las reglas se derivaron de un **único documento fuente** —`Repos-Docker/Docker.RunnerGitHub/Guides/Runner-GitHub-Docker-Installer-Guide.md`, 742 líneas—, ya que los otros tres `*-Docker-Installer-Guide.md` del workspace están vacíos. Por eso cada regla lleva marca de confianza **Estructural** (se sostiene sola) o **Inferida** (podría ser rasgo del dominio «runner» y no convención del corpus), y la generalidad queda declarada como dato no verificado. Son compatibles con `Rule-Markdown` y `Rule-Evidences`: concretan en una guía de instalación el principio general que aquellas fijan.
+
+### Pendiente
+
+- La normativa no está dada de alta en `Rules/README.md` ni en la Guía Conceptual: no es una regla atómica componible en RuleSets, de modo que su lugar en los catálogos —o una carpeta propia para normativas de tipo documental— queda por definir.
+
+---
+
 ## [1.11.1] — 2026-07-19
 
 ### Corregido
